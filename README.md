@@ -9,3 +9,6 @@ Hack the 6ix Project
 3. `$ sudo apt-get install wkhtmltopdf` (or use brew if on a Mac)
 4. Run `./server.py` from bash
 5. Access the API from http://localhost:8080/incoming
+
+## Issues
+- https://github.com/JazzCore/python-pdfkit/wiki/Using-wkhtmltopdf-without-X-server
