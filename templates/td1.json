@@ -1,0 +1,17 @@
+{
+  "title": "td1",
+  "description": "TD1-2016 Personal Tax Credits Return",
+  "keywords": [
+    "td1",
+    "tax",
+    "credits"
+  ],
+  "fields": {
+    "party1": "What is the first party's name?",
+    "party1-initials": "What are the first party's initials?",
+    "party2": "What is the second party's name?",
+    "party2-initials": "What are the second party's initials?",
+    "date": "On what date should this agreement be made?"
+  },
+  "html": "<html goes here>"
+}
