@@ -22,13 +22,13 @@ class handleMessage:
 						<Message>
 							{message}
 						</Message>
-					</Response>""".format(message=decision_tree.processMessage(sender, message))
+					</Response>""".format(message=decision_tree.decision_tree(sender, message))
 
 		return output
 
 class getForm:
 	def GET(self, name):
-        if name in os.listdir("output"):  # Security
+    	if name in os.listdir("output"):  # Security
             web.header("Content-Type", "application/pdf") # Set the Header
             return open('output/%s'%name, "rb").read() # Notice 'rb' for reading images
         
