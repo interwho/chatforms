@@ -28,12 +28,12 @@ class handleMessage:
 
 class getForm:
 	def GET(self, name):
-    	if name in os.listdir("output"):  # Security
-            web.header("Content-Type", "application/pdf") # Set the Header
-            return open('output/%s'%name, "rb").read() # Notice 'rb' for reading images
+		if name in os.listdir("output"):  # Security
+			web.header("Content-Type", "application/pdf") # Set the Header
+			return open('output/%s'%name, "rb").read() # Notice 'rb' for reading images
         
-        else:
-            raise web.notfound()
+		else:
+			raise web.notfound()
 
 if __name__ == "__main__":
 	app.run()
